@@ -5,356 +5,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mihan Fars</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+
+    <link rel="stylesheet" href="styles/style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <!-- Navbar -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">Mihan Fars.</div>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#one">Home</a></li>
-                <li><a href="#one">Who We Are</a></li>
-                <li><a href="#two">Our Mission</a></li>
-                <li><a href="#three">Our Core Services</a></li>
-                <li><a href="#four">Why Choose Us</a></li>
-                <li><a href="#five">Products</a></li>
+
+<header class="site-header">
+    <div class="container nav-inner">
+
+        <div class="brand">
+            <a href="index.html">
+                <span class="brand-company">PERSISTENT FARS HOMELAND</span>
+                <small class="brand-sub">International Co. Ltd.</small>
+            </a>
+        </div>
+
+        <nav class="main-nav">
+            <button id="mobileToggle" class="mobile-toggle" aria-expanded="false">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <ul id="navList" class="nav-list">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="whoWeAre.html">Who We Are</a></li>
+                <li><a href="product.html">Our Products</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
-            <div class="menu-icon" id="menuIcon">&#9776;</div>
         </nav>
-    </header>
 
-    <!-- Hero Section -->
-    <section id="one" class="hero">
-        <div class="hero-left">
-            <img src="assets/mihan logo.png" alt="Company Logo">
-        </div>
+    </div>
+</header>
 
-        <div class="hero-right">
-            <h1>Who We Are?</h1>
-            <p class="short-text">
-                PERSISTENT FARS HOMELAND INTERNATIONAL CO. LTD WAS FOUNDED IN 2017 AS A COMMERCIAL BUSINESS COMPANY.
-                WE ARE A DYNAMIC TRADING ENTITY SPECIALIZING IN THE SEAMLESS EXCHANGE OF GOODS AND SERVICES ACROSS
-                INTERNATIONAL MARKETS, MULTIPLE KEY INDUSTRIES INCLUDING OIL AND GAS, PETROCHEMICAL & FOOD PRODUCTS
-                WITH A STRONG COMMITMENT TO INTEGRITY, QUALITY, AND CUSTOMER SATISFACTION...
-            </p>
-            <p class="full-text">
-                PERSISTENT FARS HOMELAND INTERNATIONAL CO. LTD WAS FOUNDED IN 2017 AS A COMMERCIAL BUSINESS COMPANY.
-                WE ARE A DYNAMIC TRADING ENTITY SPECIALIZING IN THE SEAMLESS EXCHANGE OF GOODS AND SERVICES ACROSS
-                INTERNATIONAL MARKETS, MULTIPLE KEY INDUSTRIES INCLUDING OIL AND GAS, PETROCHEMICAL & FOOD PRODUCTS
-                WITH A STRONG COMMITMENT TO INTEGRITY, QUALITY, AND CUSTOMER SATISFACTION, WE ACT AS A TRUSTED PARTNER
-                CONNECTING SUPPLIERS AND BUYERS WORLDWIDE. OUR EXPERTISE LIES IN UNDERSTANDING MARKET TRENDS AND
-                DELIVERING TAILORED SOLUTIONS THAT DRIVE GROWTH AND SUCCESS FOR ALL STAKEHOLDERS.
-
-                WITH YEARS OF HANDS-ON EXPERIENCE AND DEEP MARKET KNOWLEDGE, WE HAVE BECOME A TRUSTED PARTNER FOR
-                BUSINESSES LOOKING TO MAINTAIN RELIABLE TRADE FLOWS TO AND FROM IRAN DESPITE LOGISTICAL AND FINANCIAL
-                RESTRICTIONS.
-            </p>
-            <button class="cta-btn" id="learnMoreBtn">Learn More</button>
-        </div>
-
-    </section>
-
-    <section id="two" class="mission-section">
-        <div class="container">
-            <div class="mission-content">
-                <h2>Our Mission</h2>
-                <p>
-                    OUR MISSION IS TO CONNECT DOMESTIC MANUFACTURERS WITH INTERNATIONAL MARKETS BY PROVIDING EFFICIENT,
-                    RELIABLE, AND TRUSTWORTHY EXPORT SERVICES. WE ARE COMMITTED TO DELIVERING HIGH-QUALITY PRODUCTS
-                    WORLDWIDE, FOSTERING LONG-TERM PARTNERSHIPS, AND CONTRIBUTING TO THE GROWTH OF OUR CLIENTS THROUGH
-                    ETHICAL BUSINESS PRACTICES AND EXCEPTIONAL CUSTOMER SUPPORT.
-                </p>
-                <p>
-                    TO BRIDGE THE GAP BETWEEN GLOBAL SUPPLIERS AND IRANIAN MARKETS BY OFFERING INNOVATIVE TRADE
-                    SOLUTIONS THAT CIRCUMVENT THE BARRIERS IMPOSED BY INTERNATIONAL SANCTIONS—WITHOUT COMPROMISING ON
-                    COMPLIANCE, RELIABILITY, AND EFFICIENCY.
-                </p>
+<!-- Hero / Logo Section -->
+ <section class="profile-section" style="background: url('assets/premium_photo.png') !important;
+  background-size: cover !important;
+  background-position: center !important;">
+        <div class="profile-container">
+            <div class="logo-circle">
+                <img src="assets/logo.png" alt="Company Logo">
             </div>
-            <div class="mission-image">
-                <img src="assets/Cross Stuffing & Transshipment.jpg" alt="Global Trade" />
+
+            <div class="bottom-bar">
+                <p>Your Trusted & Persistent Partner in Trade</p>
             </div>
+
         </div>
     </section>
 
+    </div>
+</section>
 
-    <section id="three" class="services-section">
-        <div class="container">
-            <h2 class="section-title">OUR CORE SERVICES</h2>
+<script>
+    // mobile nav toggle
+    const btn = document.getElementById('mobileToggle');
+    const navList = document.getElementById('navList');
 
-            <div class="services-grid">
-
-                <!-- INTERNATIONAL TRADING -->
-                <div class="service-card">
-                    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80"
-                        alt="International Trading">
-                    <div class="service-content">
-                        <h3>INTERNATIONAL TRADING</h3>
-                        <p>
-                            Sourcing and procurement of a wide range of industrial, commercial,
-                            and consumer goods with a strong supplier network across Iran.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- PAYMENT FACILITATION -->
-                <div class="service-card">
-                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=800&q=80"
-                        alt="Payment Facilitation">
-                    <div class="service-content">
-                        <h3>PAYMENT FACILITATION</h3>
-                        <p>
-                            Due to SWIFT unavailability, we offer alternative and compliant payment structures through:
-                        </p>
-                        <ul>
-                            <li>Third-country financial intermediaries</li>
-                            <li>Trade settlement via barter, crypto (case-by-case), or trusted agent arrangements</li>
-                            <li>Coordination with regional banking and non-banking channels</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- CROSS-STUFFING & TRANSSHIPMENT -->
-                <div class="service-card">
-                    <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=800&q=80"
-                        alt="Cross-Stuffing and Transshipment">
-                    <div class="service-content">
-                        <h3>CROSS-STUFFING & TRANSSHIPMENT</h3>
-                        <p>
-                            Operating through logistics hubs in UAE, Oman, and neighboring countries,
-                            goods are cross-stuffed and rerouted using efficient and secure methods.
-                            Seamless coordination between ports ensures cargo continuity despite direct shipping
-                            restrictions.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- SANCTIONS-AWARE TRADE SOLUTIONS -->
-                <div class="service-card">
-                    <img src="https://images.pexels.com/photos/4482900/pexels-photo-4482900.jpeg?auto=compress&cs=tinysrgb&w=800"
-                        alt="Sanctions-Aware Trade Solutions">
-                    <div class="service-content">
-                        <h3>SANCTIONS-AWARE TRADE SOLUTIONS</h3>
-                        <p>
-                            Tailor-made logistics, financial, and compliance strategies to meet the needs of customers
-                            operating under restrictive environments.
-                            Ensuring documentation, packaging, and routing align with global trade compliance standards.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- CONSULTATION SERVICES -->
-                <div class="service-card">
-                    <img src="https://images.pexels.com/photos/3184312/pexels-photo-3184312.jpeg?auto=compress&cs=tinysrgb&w=800"
-                        alt="Consultation Services for Business Partners">
-                    <div class="service-content">
-                        <h3>CONSULTATION SERVICES FOR BUSINESS PARTNERS</h3>
-                        <p>
-                            We provide comprehensive consultation services to all our business partners, ensuring
-                            compliance with the complex and evolving trade rules of Iran.
-                            We offer tailored guidance that includes:
-                        </p>
-                        <ul>
-                            <li>Strict adherence to Iran's trade regulations and international sanctions solutions.</li>
-                            <li>Management of multiple and fluctuating exchange rates to optimize outcomes.</li>
-                            <li>Understanding of legal implications to mitigate risks and ensure smooth operations.</li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-
-    <section id="four" class="why-choose-us">
-        <div class="container">
-            <h2 class="title">WHY CHOOSE US!</h2>
-            <div class="features">
-
-                <div class="feature">
-                    <div class="icon">💼</div>
-                    <h3>Expertise in High-Risk Markets</h3>
-                    <p>Deep understanding of the legal and logistical nuances of trading with Iran.</p>
-                </div>
-
-                <div class="feature">
-                    <div class="icon">🌐</div>
-                    <h3>Reliable Network</h3>
-                    <p>Strong regional presence and partnerships in UAE, Oman, China.</p>
-                </div>
-
-                <div class="feature">
-                    <div class="icon">📦</div>
-                    <h3>End-to-End Support</h3>
-                    <p>From sourcing and documentation to delivery and payment - we manage it all.</p>
-                </div>
-
-                <div class="feature">
-                    <div class="icon">🔒</div>
-                    <h3>Discreet and Secure Operations</h3>
-                    <p>We prioritize your privacy, asset security, and business continuity.</p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-    <section id="five">
-        <div class="main-heading" style="display: flex; justify-content: center; align-items: center; margin-top: 4rem; margin-bottom: 2rem;">
-            <h2 style="text-decoration: underline; font-size: 40px; color: #0d47a1;">Our Products</h2>
-        </div>
-        <div class="product-grid">
-            <div class="product-card">
-                <h3>Petrochemical Products</h3>
-                <ul>
-                    <li>Bitumen (All Grades)</li>
-                    <li>Urea 46% (Granular & Prilled)</li>
-                    <li>Base Oil (Virgin & Recycle)</li>
-                    <li>Petroleum Jelly (Industrial & Cosmetic)</li>
-                    <li>Plastic Granules (HDPE, LDPE, LLDPE)</li>
-                </ul>
-            </div>
-
-            <div class="product-card">
-                <h3>Food Products</h3>
-                <ul>
-                    <li>Saffron (Super Negin, Sargol, Pushal)</li>
-                    <li>Pistachio (Shell & Kernel)</li>
-                    <li>Raisins (Golden & Green)</li>
-                    <li>Cumin Seeds (Green)</li>
-                    <li>Sodium Bicarbonate (Baking Soda)</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-
-
-
-    <section id="six">
-        <div class="export-main" style="display: flex; justify-content: center; align-items: center; margin-top: 4rem;">
-            <h2 style="text-decoration: underline; font-size: 40px; color: #0d47a1;">Our Export To:</h2>
-        </div>
-        <div class="export-image">
-            <img src="Assets/Export.png" alt="Our Export Destinations">
-        </div>
-    </section>
-
-
-    <!-- Footer Section -->
-
-
-
-    <footer>
-        <!-- Footer Section -->
-        <section id="contact-footer">
-            <div class="footer-container">
-                <div class="footer-content">
-                    <h2>Let's Collaborate</h2>
-                    <p>
-                        We invite customers, suppliers, logistics providers, and business partners to collaborate with
-                        us to tap into Iran’s high-potential market — through a trusted local partner who knows the
-                        terrain and can deliver results, even in challenging circumstances.
-                    </p>
-                    <div class="contact-info">
-
-                        <div class="icons">
-                            <div class="contact-item">
-                                <strong><i class="fa-solid fa-phone"></i> Phone:</strong>
-                                <span>+98 51 3838 1242</span>
-                            </div>
-                            <div class="contact-item">
-                                <strong><i class="fa-brands fa-whatsapp"></i> WhatsApp:</strong>
-                                <span>+98 935 832 0407</span>
-                            </div>
-                            <div class="contact-item">
-                                <strong><i class="fa-solid fa-envelope"></i> Email:</strong>
-                                <span>info@pfhil.com</span>
-                            </div>
-                            <div class="contact-item">
-                                <strong><i class="fa-solid fa-globe"></i> Website:</strong>
-                                <span>www.pfhil.com</span>
-                            </div>
-                        </div>
-
-
-                        <div class="contact-item" style="display: flex; justify-content: center;">
-                            <div style="display: flex; flex-direction: column;">
-                                <div>
-                                    <strong style="display: flex; justify-content: center;"><i
-                                            class="fa-solid fa-location-dot"></i> Address:</strong>
-                                </div>
-                                <div>
-                                    <span>Suite 7, 11th Floor, Entrance 3, MarMar Office Tower, 28th Imam Khomeini St,
-                                        Mashhad, Iran</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="footer-bottom">
-            © 2025 Mihan Fars. All rights reserved.
-        </div>
-    </footer>
-
-
-    <script>
-        const learnMoreBtn = document.getElementById('learnMoreBtn');
-        const fullText = document.querySelector('.full-text');
-
-        learnMoreBtn.addEventListener('click', () => {
-            fullText.classList.toggle('active');
-
-            // Change button text
-            if (fullText.classList.contains('active')) {
-                learnMoreBtn.textContent = 'Show Less';
-            } else {
-                learnMoreBtn.textContent = 'Learn More';
-            }
-        });
-    </script>
-
-
-    <script>
-        // Mobile menu toggle
-        const menuIcon = document.getElementById('menuIcon');
-        const navLinks = document.getElementById('navLinks');
-
-        menuIcon.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-    </script>
-
-
-    <script>
-   (function() {
-  const navLinks = document.querySelectorAll('nav a[href^="#"]');
-
-  navLinks.forEach(link => {
-    link.addEventListener('click', function(e) {
-      e.preventDefault();
-      const targetId = this.getAttribute('href');
-      const targetSection = document.querySelector(targetId);
-      if (targetSection) {
-        targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
+    btn.addEventListener('click', () => {
+        navList.classList.toggle('nav-open');
+        btn.setAttribute('aria-expanded',
+            btn.getAttribute('aria-expanded') === 'false'
+            ? 'true' : 'false'
+        );
     });
-  });
-})();
+</script>
 
-
-
-    </script>
 </body>
-
 </html>
