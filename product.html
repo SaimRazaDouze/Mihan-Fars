@@ -1,193 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Persistent Fars — Products</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/product.css">
 
-  <!-- Google font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome (icons) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <link rel="stylesheet" href="styles/style.css">
-  <link rel="stylesheet" href="styles/product.css">
 </head>
-<body>
+<body style="  background: url('assets/premium_photo.png') !important;
+    background-size: cover !important;
+    background-position: center !important;
+">
 
-  <!-- Header / Nav -->
-  <header class="site-header">
+
+   <header class="site-header">
     <div class="container nav-inner">
-      <div class="brand">
-        <a href="index.html" aria-label="Persistent Fars Homeland">
-          <span class="brand-company">PERSISTENT FARS HOMELAND</span>
-          <small class="brand-sub">International Co. Ltd.</small>
-        </a>
-      </div>
 
-      <nav class="main-nav" aria-label="Primary Navigation">
-        <button id="mobileToggle" class="mobile-toggle" aria-expanded="false" aria-controls="navList">
-          <span class="sr-only">Toggle navigation</span>
-          <i class="fa fa-bars"></i>
-        </button>
-
-        <ul id="navList" class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="whoWeAre.html">Who We Are</a></li>
-          <li><a href="product.html" class="active">Our Products</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Hero / Page Heading -->
-  <section class="hero">
-    <div class="container hero-inner">
-      <h1>Our Products</h1>
-      <p class="hero-sub">Reliable supply of industrial commodities — quality, consistency and global logistics.</p>
-    </div>
-  </section>
-
-  <!-- Products Section -->
-  <main>
-    <section class="section-wrapper products-section" aria-labelledby="products-heading">
-      <div class="container">
-        <h2 id="products-heading" class="section-title">Featured Products</h2>
-
-        <div class="products-grid">
-          <!-- Each product -->
-          <article class="product-card" tabindex="0">
-            <div class="product-media">
-              <img src="assets/unnamed.jpg" alt="Bitumen product" loading="lazy">
-            </div>
-            <h3 class="product-title">Bitumen (All Grades)</h3>
-            <p class="product-desc">Steel Drum • Jumbo Bag • Flexitank</p>
-          </article>
-
-          <article class="product-card" tabindex="0">
-            <div class="product-media">
-              <img src="assets/unnamed (1).jpg" alt="Urea 46%">
-            </div>
-            <h3 class="product-title">Urea 46% (Granular & Prilled)</h3>
-            <p class="product-desc">50 Kg Bag • 1 MT Jumbo Bag</p>
-          </article>
-
-          <article class="product-card" tabindex="0">
-            <div class="product-media">
-              <img src="assets/unnamed (2).jpg" alt="Base Oil product">
-            </div>
-            <h3 class="product-title">Base Oil (Virgin & Recycle)</h3>
-            <p class="product-desc">Steel Drum • Flexibag</p>
-          </article>
-
-          <article class="product-card" tabindex="0">
-            <div class="product-media">
-              <img src="assets/unnamed (3).jpg" alt="Petroleum Jelly">
-            </div>
-            <h3 class="product-title">Petroleum Jelly</h3>
-            <p class="product-desc">175 Kg Drum (Steel / HDPE)</p>
-          </article>
-
-          <article class="product-card" tabindex="0">
-            <div class="product-media">
-              <img src="assets/unnamed (5).jpg" alt="Plastic Granules">
-            </div>
-            <h3 class="product-title">Plastic Granules (HDPE, LDPE, LLDPE)</h3>
-            <p class="product-desc">25 Kg Bag</p>
-          </article>
+        <div class="brand">
+            <a href="index.html">
+                <span class="brand-company">PERSISTENT FARS HOMELAND</span>
+                <small class="brand-sub">International Co. Ltd.</small>
+            </a>
         </div>
-      </div>
-    </section>
 
-    <!-- Why choose us -->
-    <section class="section-wrapper why-section" aria-labelledby="why-heading">
-      <div class="container">
-        <h2 id="why-heading" class="section-title center">Why Choose Us</h2>
+        <nav class="main-nav">
+            <button id="mobileToggle" class="mobile-toggle" aria-expanded="false">
+                <i class="fa fa-bars"></i>
+            </button>
 
-        <div class="why-grid">
-          <div class="why-card">
-            <i class="fa fa-briefcase why-icon" aria-hidden="true"></i>
-            <h4>Expertise in High-Risk Markets</h4>
-            <p>Deep understanding of legal and logistical nuances of trading with Iran.</p>
-          </div>
+            <ul id="navList" class="nav-list">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="whoWeAre.html">Who We Are</a></li>
+                <li><a href="product.html">Our Products</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
 
-          <div class="why-card">
-            <i class="fa fa-globe why-icon" aria-hidden="true"></i>
-            <h4>Reliable Network</h4>
-            <p>Strong regional presence and partnerships in UAE, Oman and China.</p>
-          </div>
-
-          <div class="why-card">
-            <i class="fa fa-box-open why-icon" aria-hidden="true"></i>
-            <h4>End-to-End Support</h4>
-            <p>From sourcing and documentation to delivery and payment — we manage it all.</p>
-          </div>
-
-          <div class="why-card">
-            <i class="fa fa-lock why-icon" aria-hidden="true"></i>
-            <h4>Discreet & Secure Operations</h4>
-            <p>We prioritize privacy, asset security, and business continuity.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact / CTA -->
-    <section class="section-wrapper contact-section" aria-labelledby="contact-heading">
-      <div class="container">
-        <h2 id="contact-heading" class="section-title center">Let's Collaborate</h2>
-        <p class="contact-lead">We invite customers, suppliers, logistics providers, and business partners to collaborate with us to tap into Iran’s high-potential market — through a trusted local partner who knows the terrain and can deliver results, even in challenging circumstances.</p>
-
-        <div class="contact-grid">
-          <div class="contact-item">
-            <i class="fa fa-phone contact-icon" aria-hidden="true"></i>
-            <div><strong>Phone</strong><br>+98 51 3838 1242</div>
-          </div>
-          <div class="contact-item">
-            <i class="fa fa-whatsapp contact-icon" aria-hidden="true"></i>
-            <div><strong>WhatsApp</strong><br>+98 935 832 0407</div>
-          </div>
-          <div class="contact-item">
-            <i class="fa fa-envelope contact-icon" aria-hidden="true"></i>
-            <div><strong>Email</strong><br>info@pfhil.com</div>
-          </div>
-          <div class="contact-item">
-            <i class="fa fa-link contact-icon" aria-hidden="true"></i>
-            <div><strong>Website</strong><br>www.pfhil.com</div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-left">
-        <p>© <span id="year"></span> Persistent Fars. All rights reserved.</p>
-      </div>
-      <div class="footer-right">
-        <small>Suite 7, 11th Floor, Entrance 3, MarMar Office Tower, 28th Imam Khomeini St, Mashhad, Iran</small>
-      </div>
     </div>
-  </footer>
+</header>
 
-  <script>
-    // Mobile nav toggle
+
+<section class="products-section">
+    <h2 class="section-title" style="text-decoration: underline; font-size: 40px;">Our Products</h2>
+
+    <div class="products-grid">
+
+        <!-- 1. Bitumen -->
+        <div class="product-card">
+            <img src="assets/unnamed.jpg" alt="Bitumen">
+            <h3>Bitumen (All Grades)</h3>
+            <p>Steel Drum, Jumbo Bag, Flexitank</p>
+        </div>
+
+        <!-- 2. Urea 46% -->
+        <div class="product-card">
+            <img src="assets/unnamed (1).jpg" alt="Urea 46%">
+            <h3>Urea 46% (Granular & Prilled)</h3>
+            <p>50 Kg Bag, 1 MT Jumbo Bag</p>
+        </div>
+
+        <!-- 3. Base Oil -->
+        <div class="product-card">
+            <img src="assets/unnamed (2).jpg" alt="Base Oil">
+            <h3>Base Oil (Virgin & Recycle)</h3>
+            <p>Steel Drum, Flexibag</p>
+        </div>
+
+        <!-- 4. Petroleum Jelly -->
+        <div class="product-card">
+            <img src="assets/unnamed (3).jpg" alt="Petroleum Jelly">
+            <h3>Petroleum Jelly</h3>
+            <p>Industrial & Cosmetic Grades, 175 Kg Drum</p>
+        </div>
+
+        <!-- 5. Plastic Granules -->
+        <div class="product-card">
+            <img src="assets/unnamed (5).jpg" alt="Plastic Granules">
+            <h3>Plastic Granules</h3>
+            <p>HDPE, LDPE, LLDPE — 25 Kg Bag</p>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+<script>
     const btn = document.getElementById('mobileToggle');
     const navList = document.getElementById('navList');
-    btn.addEventListener('click', () => {
-      const expanded = btn.getAttribute('aria-expanded') === 'true' || false;
-      btn.setAttribute('aria-expanded', !expanded);
-      navList.classList.toggle('nav-open');
-    });
 
-    // current year
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+    btn.addEventListener('click', () => {
+        navList.classList.toggle('nav-open');
+        btn.setAttribute('aria-expanded',
+            btn.getAttribute('aria-expanded') === 'false'
+            ? 'true' : 'false'
+        );
+    });
+</script>
+
+
+
+    
 </body>
 </html>
