@@ -11,10 +11,16 @@
 body {
   font-family: "Roboto Condensed", sans-serif;
   background:
-    linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
+    linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
     url('../assets/premium_photo.png') center/cover no-repeat fixed;
   min-height: 100vh;
   overflow-x: hidden;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
 :root {
@@ -32,7 +38,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 999;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
 }
 
 .container {
@@ -109,13 +115,21 @@ body {
 .nav-list a.active::after {
   width: 100%;
 }
-
+@media (max-width: 480px) {
+  body {
+    background-size: contain !important;
+    background-repeat: no-repeat;
+    background-color: #f0f0f0; /* optional */
+  }
+}
 /* MOBILE NAV */
 @media (max-width: 900px) {
 
   .mobile-toggle {
     display: block;
   }
+
+
 
   .nav-list {
     position: absolute;
@@ -136,113 +150,157 @@ body {
 
 
 -----New Section------
-
 .profile-section {
-    width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .profile-container {
-    width: 100%;
-    margin: auto;
-    padding: 0;
-    position: relative;
-    border-radius: 6px;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between; /* pushes logo up and bar down */
 }
 
 /* Logo Section */
 .logo-circle {
-    width: 580px;            /* Adjusted size */
-    height: 580px;
-    border-radius: 50%;
-    margin: 20px auto  -25px auto; /* VERY IMPORTANT: removes extra gap */
+  width: 450px;
+  height: 550px;
+  border-radius: 50%;
+  margin: 20px auto -25px auto;
 }
 
 .logo-circle img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.fa-download {
+  margin-right: 5px;
+}
+
+.btn-1 {
+  display: block;
+  margin-bottom:2px;
+  width: fit-content;
+  padding: 6px 16px;
+  text-align: center;
+  align-items: center;
+  border-radius: 6px;
+  text-decoration: none;
+  color: black !important;
+  background: white !important;
+
 }
 
 /* Bottom Blue Bar */
 .bottom-bar {
-    width: 100%;
-    background: #06326b;
-    padding: 10px 0;
-    text-align: center;
+  margin-top: 30px;
+  width: 100%;
+  background: #06326b;
+  padding: 10px 0;
+  text-align: center;
 }
 
 .bottom-bar p {
-    color: white;
-    font-size: 30px;
-    font-weight: 600;
-    font-family: 'Dancing Script', cursive;
-    letter-spacing: 1px;
-    margin: 0;
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: 'Dancing Script', cursive;
+  letter-spacing: 1px;
+  margin: 0;
 }
-/* ===========================
-   RESPONSIVE DESIGN FIXES
-   =========================== */
 
-/* Tablets - Medium Screens */
+
 @media (max-width: 1024px) {
-    .logo-circle {
-        width: 420px !important;
-        height: 420px !important;
-        margin: 20px auto -20px auto !important;
-    }
 
-    .bottom-bar p {
-        font-size: 26px !important;
-    }
+  /* Add spacing from the header */
+  .logo-circle {
+    margin-top: 60px !important; /* increase gap from top */
+    width: 420px !important;
+    height: 420px !important;
+  }
+
+  /* Increase space above blue bar */
+  .bottom-bar {
+    margin-top: 40px !important;
+  }
 }
 
-/* Mobile Large */
+
+/* ------------------------------------
+   MOBILE LARGE
+------------------------------------ */
 @media (max-width: 768px) {
-    .logo-circle {
-        width: 320px !important;
-        height: 320px !important;
-        margin: 15px auto -10px auto !important;
-    }
 
-    .bottom-bar p {
-        font-size: 22px !important;
-    }
+  .logo-circle {
+    width: 320px !important;
+    height: 320px !important;
+    margin-top: 70px !important; /* more space under header */
+  }
+
+  .bottom-bar {
+    margin-top: 50px !important; /* push bar downward */
+  }
+
+  .bottom-bar p {
+    font-size: 22px !important;
+  }
 }
 
-/* Mobile Medium + Small */
+
+/* ------------------------------------
+   MOBILE MEDIUM + SMALL
+------------------------------------ */
 @media (max-width: 480px) {
-    .logo-circle {
-        width: 230px !important;
-        height: 230px !important;
-        margin: 10px auto -5px auto !important;
+
+  .logo-circle {
+        width: 250px !important;
+        height: 250px !important;
+        margin-top: 200px !important;
+        margin-bottom: 200px;
     }
 
-    .bottom-bar {
-        padding: 8px 0 !important;
-    }
+  .bottom-bar {
+    margin-top: 60px !important; /* push blue bar down */
+    padding: 8px 0 !important;
+  }
 
-    .bottom-bar p {
-        font-size: 18px !important;
-        letter-spacing: 0.5px !important;
-    }
+  .bottom-bar p {
+    font-size: 18px !important;
+  }
 }
 
-/* Extra Small Devices */
+
+/* ------------------------------------
+   EXTRA SMALL DEVICES
+------------------------------------ */
 @media (max-width: 360px) {
-    .logo-circle {
-        width: 200px !important;
-        height: 200px !important;
-        margin: 8px auto 0 auto !important; /* remove negative margin completely */
+
+  .logo-circle {
+        width: 250px !important;
+        height: 250px !important;
+        margin-top: 200px !important;
+        margin-bottom: 200px;
     }
 
-    .bottom-bar p {
-        font-size: 16px !important;
-    }
+  .bottom-bar {
+    margin-top: 50px !important;
+  }
+
+  .bottom-bar p {
+    font-size: 16px !important;
+  }
 }
 
 /* Force container to shrink-wrap content */
 .profile-container {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
 }

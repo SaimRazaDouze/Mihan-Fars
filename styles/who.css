@@ -208,7 +208,7 @@ body {
     background-color: #08376b;
     color: #fff;
     border: none;
-    padding: 12px 30px;
+    padding: 15px 30px;
     border-radius: 8px;
     cursor: pointer;
     transition: 0.3s;
@@ -359,10 +359,7 @@ body {
     border-radius: 2px;
   }
 
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+ 
 
   .services-grid {
     display: grid;

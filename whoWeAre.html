@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FARS-WHO-WE-ARE</title>
+    <meta name="description" content="Learn about Persistent FARS Homeland International Co. Ltd. (PFHIL). We provide sanctions-aware trade, payment facilitation, and expert logistics for the Oil/Gas and Petrochemical industries.">
+    <meta name="keywords" content="Iran logistics, sanctions-aware trade, payment facilitation, cross-stuffing, petrochemical trade, PFHIL mission, international trading company">
+    <link rel="icon" type="image/png" href="assets/optimised_logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/who.css">
 
 </head>
+
 <body style="  background: url('assets/premium_photo.png') !important;
     background-size: cover !important;
     background-position: center !important;
 ">
 
 
-    <header class="site-header">
+     <header class="site-header">
     <div class="container nav-inner">
 
         <div class="brand">
@@ -31,9 +36,12 @@
             </button>
 
             <ul id="navList" class="nav-list">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="whoWeAre.html">Who We Are</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="whoWeAre.html" class="active">Who We Are</a></li>
                 <li><a href="product.html">Our Products</a></li>
+                <li>
+                <a href="PFHIL Profile (1).pdf" download class=" btn"><i class="fa-solid fa-download"></i>Download Profile</a>
+                </li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
@@ -42,41 +50,44 @@
 </header>
 
 
-<section id="one" class="hero">
-    <div class="hero-left">
-        <img src="assets/who.png" alt="Company Logo">
-    </div>
+    <section id="one" class="hero">
+        <div class="hero-left">
+            <img src="assets/who.png" alt="Company Logo">
+        </div>
 
-    <div class="hero-right">
-        <h1>Who We Are?</h1>
+        <div class="hero-right">
+            <h1>Who We Are?</h1>
 
-        <p class="short-text">
-            Persistent Fars Homeland International Co. LTD was founded in 2017 as a commercial business company. We
-            are a dynamic trading ENTITY specializing in the seamless exchange of goods and services across
-            international markets, multiple key industries including Oil and Gas & Petrochemical. With a strong
-            commitment to integrity, quality, and customer satisfaction, we act as a trusted partner connecting
-            suppliers and buyers worldwide.
-        </p>
+            <p class="short-text">
+                Persistent Fars Homeland International Co. LTD was founded in 2017 as a commercial business company. We
+                are a dynamic trading ENTITY specializing in the seamless exchange of goods and services across
+                international markets, multiple key industries including Oil and Gas & Petrochemical. With a strong
+                commitment to integrity, quality, and customer satisfaction, we act as a trusted partner connecting
+                suppliers and buyers worldwide.
+            </p>
 
-        <p class="full-text">
-            Our expertise lies in understanding market trends and delivering tailored solutions that drive growth and
-            success for all stakeholders. With years of hands-on experience and deep market knowledge, we have become a
-            trusted partner for businesses looking to maintain reliable trade flows to and from Iran despite logistical
-            and financial restrictions.
-        </p>
+            <p class="full-text">
+                Our expertise lies in understanding market trends and delivering tailored solutions that drive growth
+                and
+                success for all stakeholders. With years of hands-on experience and deep market knowledge, we have
+                become a
+                trusted partner for businesses looking to maintain reliable trade flows to and from Iran despite
+                logistical
+                and financial restrictions.
+            </p>
 
-        <button class="cta-btn" id="learnMoreBtn">Learn More</button>
-    </div>
-</section>
+            <button class="cta-btn" id="learnMoreBtn">Learn More</button>
+        </div>
+    </section>
 
 
 
 
     <section class="mission-section">
-                <div class="container">
+        <div class="container">
 
-                    <h2 class="section-title">OUR MISSION</h2>
-                </div>
+            <h2 class="section-title">OUR MISSION</h2>
+        </div>
 
         <div class="mission-container">
             <h2 class="mission-title">Mission Statement.!</h2>
@@ -191,35 +202,36 @@
 
 
     <script>
-    const learnMoreBtn = document.getElementById('learnMoreBtn');
-    const fullText = document.querySelector('.full-text');
+        const learnMoreBtn = document.getElementById('learnMoreBtn');
+        const fullText = document.querySelector('.full-text');
 
-    learnMoreBtn.addEventListener('click', () => {
-        fullText.classList.toggle('active');
+        learnMoreBtn.addEventListener('click', () => {
+            fullText.classList.toggle('active');
 
-        if (fullText.classList.contains('active')) {
-            learnMoreBtn.textContent = 'Show Less';
-        } else {
-            learnMoreBtn.textContent = 'Learn More';
-        }
-    });
-</script>
+            if (fullText.classList.contains('active')) {
+                learnMoreBtn.textContent = 'Show Less';
+            } else {
+                learnMoreBtn.textContent = 'Learn More';
+            }
+        });
+    </script>
 
-<script>
-    const btn = document.getElementById('mobileToggle');
-    const navList = document.getElementById('navList');
+    <script>
+        const btn = document.getElementById('mobileToggle');
+        const navList = document.getElementById('navList');
 
-    btn.addEventListener('click', () => {
-        navList.classList.toggle('nav-open');
-        btn.setAttribute('aria-expanded',
-            btn.getAttribute('aria-expanded') === 'false'
-            ? 'true' : 'false'
-        );
-    });
-</script>
+        btn.addEventListener('click', () => {
+            navList.classList.toggle('nav-open');
+            btn.setAttribute('aria-expanded',
+                btn.getAttribute('aria-expanded') === 'false'
+                    ? 'true' : 'false'
+            );
+        });
+    </script>
 
 
 
-    
+
 </body>
+
 </html>
