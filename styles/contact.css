@@ -295,3 +295,12 @@ footer {
     border-radius: 8px;
   }
 }
+
+@media(max-width: 480px) {
+  .brand-company {
+    font-size: 13.2px;
+    font-weight: 700;
+    line-height: 0.1;
+  }
+
+}
