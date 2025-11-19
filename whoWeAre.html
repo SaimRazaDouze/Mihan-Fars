@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Who We Are</title>
-    <meta name="description" content="Learn about Persistent FARS Homeland International Co. Ltd. (PFHIL). We provide sanctions-aware trade, payment facilitation, and expert logistics for the Oil/Gas and Petrochemical industries.">
-    <meta name="keywords" content="Iran logistics, sanctions-aware trade, payment facilitation, cross-stuffing, petrochemical trade, PFHIL mission, international trading company">
+    <meta name="description"
+        content="Learn about Persistent FARS Homeland International Co. Ltd. (PFHIL). We provide sanctions-aware trade, payment facilitation, and expert logistics for the Oil/Gas and Petrochemical industries.">
+    <meta name="keywords"
+        content="Iran logistics, sanctions-aware trade, payment facilitation, cross-stuffing, petrochemical trade, PFHIL mission, international trading company">
     <link rel="icon" type="image/png" href="assets/optimised_logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="styles/style.css">
@@ -20,34 +22,35 @@
 ">
 
 
-     <header class="site-header">
-    <div class="container nav-inner">
+    <header class="site-header">
+        <div class="container nav-inner">
 
-        <div class="brand">
-            <a href="index.html">
-                <span class="brand-company">PERSISTENT FARS HOMELAND</span>
-                <small class="brand-sub">International Co. Ltd.</small>
-            </a>
+            <div class="brand">
+                <a href="index.html">
+                    <span class="brand-company">PERSISTENT FARS HOMELAND International Co. Ltd.</span>
+                </a>
+            </div>
+
+            <nav class="main-nav">
+                <button id="mobileToggle" class="mobile-toggle" aria-expanded="false">
+                    <i class="fa fa-bars"></i>
+                </button>
+
+                <ul id="navList" class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="whoWeAre.html" class="active">Who We Are</a></li>
+                    <li><a href="product.html">Our Products</a></li>
+                    <li>
+                        <a href="PFHIL Profile (1).pdf" download class=" btn"><i
+                                class="fa-solid fa-download"></i>Download Profile</a>
+                    </li>
+                    <li><a href="export.html">Our Export</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+
         </div>
-
-        <nav class="main-nav">
-            <button id="mobileToggle" class="mobile-toggle" aria-expanded="false">
-                <i class="fa fa-bars"></i>
-            </button>
-
-            <ul id="navList" class="nav-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="whoWeAre.html" class="active">Who We Are</a></li>
-                <li><a href="product.html">Our Products</a></li>
-                <li>
-                <a href="PFHIL Profile (1).pdf" download class=" btn"><i class="fa-solid fa-download"></i>Download Profile</a>
-                </li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-
-    </div>
-</header>
+    </header>
 
 
     <section id="one" class="hero">
@@ -66,7 +69,7 @@
                 suppliers and buyers worldwide.
             </p>
 
-            <p class="full-text">
+            <p class="short-text">
                 Our expertise lies in understanding market trends and delivering tailored solutions that drive growth
                 and
                 success for all stakeholders. With years of hands-on experience and deep market knowledge, we have
@@ -76,7 +79,6 @@
                 and financial restrictions.
             </p>
 
-            <button class="cta-btn" id="learnMoreBtn">Learn More</button>
         </div>
     </section>
 
@@ -84,42 +86,47 @@
 
 
     <section class="mission-section">
-        <div class="container">
 
-            <h2 class="section-title">OUR MISSION</h2>
-        </div>
+        <div class="mission-content">
 
-        <div class="mission-container">
-            <h2 class="mission-title">Mission Statement.!</h2>
-
-            <div class="mission-item">
-                <span class="check-icon">✔</span>
-                <p>
-                    To connect domestic manufacturers with international markets by providing efficient,
-                    reliable, and trustworthy export services. We are committed to delivering high-quality
-                    products worldwide, fostering long-term partnerships and contributing to the growth
-                    of our clients through ethical business practices and exceptional customer support.
-                </p>
+            <div class="mission-image">
+                <img src="assets/mission.png" alt="Mission Image">
             </div>
 
-            <div class="mission-item">
-                <span class="check-icon">✔</span>
-                <p>
-                    To bridge the gap between global suppliers and Iranian markets by offering
-                    innovative trade solutions that circumvent the barriers imposed by
-                    international sanctions—without compromising on compliance, reliability
-                    AND efficiency.
-                </p>
+            <div class="mission-box">
+                <h2 class="mission-title">Mission Statement.!</h2>
+
+                <div class="mission-item">
+                    <span class="check-icon">✔</span>
+                    <p>
+                        To connect domestic manufacturers with international markets by providing efficient,
+                        reliable, and trustworthy export services. We are committed to delivering high-quality
+                        products worldwide, fostering long-term partnerships and contributing to the growth of
+                        our clients through ethical business practices and exceptional customer support.
+                    </p>
+                </div>
+
+                <div class="mission-item">
+                    <span class="check-icon">✔</span>
+                    <p>
+                        To bridge the gap between global suppliers and Iranian markets by offering innovative
+                        trade solutions that circumvent barriers imposed by international sanctions—without
+                        compromising on compliance, reliability, and efficiency.
+                    </p>
+                </div>
+
             </div>
 
         </div>
+
     </section>
+
 
 
 
     <section id="three" class="services-section">
         <div class="container">
-            <h2 class="section-title">OUR CORE SERVICES</h2>
+            <h2 class="section-title">Our Core Services</h2>
 
             <div class="services-grid">
 
@@ -199,22 +206,6 @@
         </div>
     </section>
 
-
-
-    <script>
-        const learnMoreBtn = document.getElementById('learnMoreBtn');
-        const fullText = document.querySelector('.full-text');
-
-        learnMoreBtn.addEventListener('click', () => {
-            fullText.classList.toggle('active');
-
-            if (fullText.classList.contains('active')) {
-                learnMoreBtn.textContent = 'Show Less';
-            } else {
-                learnMoreBtn.textContent = 'Learn More';
-            }
-        });
-    </script>
 
     <script>
         const btn = document.getElementById('mobileToggle');

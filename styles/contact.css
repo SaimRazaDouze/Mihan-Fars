@@ -11,7 +11,7 @@
 body {
   font-family: "Roboto Condensed", sans-serif;
   background:
-    linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
+    linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
     url('../assets/premium_photo.png') center/cover no-repeat fixed;
   min-height: 100vh;
   overflow-x: hidden;
@@ -25,14 +25,14 @@ body {
   --accent: #fbc02d;
 }
 
-/* HEADER */
+/* -----Header----- */
 .site-header {
   background: var(--blue);
   padding: 14px 0;
   position: sticky;
   top: 0;
   z-index: 999;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
 }
 
 .container {
@@ -63,7 +63,6 @@ body {
   opacity: 0.9;
 }
 
-/* NAVIGATION */
 .main-nav {
   display: flex;
   align-items: center;
@@ -110,7 +109,6 @@ body {
   width: 100%;
 }
 
-/* MOBILE NAV */
 @media (max-width: 900px) {
 
   .mobile-toggle {
@@ -136,208 +134,164 @@ body {
 
 
 
-h2, h2.title {
-    text-align: center;
-    font-weight: 700;
-    color: var(--blue);
-    margin-bottom: 45px;
-    letter-spacing: 0.4px;
+h2,
+h2.title {
+  text-align: center;
+  font-weight: 700;
+  color: var(--blue);
+  margin-bottom: 45px;
+  letter-spacing: 0.4px;
 }
 
 h2.title {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 @media (max-width: 768px) {
-    h2, h2.title {
-        font-size: 2rem;
-        margin-bottom: 35px;
-    }
+
+  h2,
+  h2.title {
+    font-size: 2rem;
+    margin-bottom: 35px;
+  }
 }
 
 @media (max-width: 480px) {
-    h2, h2.title {
-        font-size: 1.75rem;
-        margin-bottom: 30px;
-    }
+
+  h2,
+  h2.title {
+    font-size: 1.75rem;
+    margin-bottom: 30px;
+  }
 }
 
-/* =========================================
-   EXPORT SECTION
-========================================= */
-.export-section {
-    text-align: center;
-}
-
-.export-section h2 {
-    font-size: 2.3rem;
-}
-
-.export-image img {
-    width: 100%;
-    max-width: 950px;
-    height: auto;
-    display: block;
-    margin: 15px auto 0 auto;
-    border-radius: 12px;
-    /* Added box shadow using theme colors */
-    box-shadow: 0 8px 20px rgba(6, 50, 107, 0.3), 0 4px 10px rgba(13, 71, 161, 0.25);
-}
-
-
-/* =========================================
-   WHY CHOOSE US SECTION
-========================================= */
+/* -----Why Choose Us----- */
 .why-choose-us .features {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-    gap: 35px;
-    margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 35px;
+  margin-top: 25px;
 }
 
 .feature {
-background: aliceblue;
-    padding: 38px 28px;
-    border-radius: 16px;
-    text-align: center;
-    box-shadow: 0 5px 15px var(--shadow);
-    border-top: 5px solid var(--blue-light);
-    transition: 0.3s ease;
+  background: aliceblue;
+  padding: 38px 28px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 5px 15px var(--shadow);
+  border-top: 5px solid var(--blue-light);
+  transition: 0.3s ease;
 }
 
 .feature:hover {
-    transform: translateY(-7px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(-7px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .feature .icon {
-    font-size: 50px;
-    margin-bottom: 18px;
+  font-size: 50px;
+  margin-bottom: 18px;
 }
 
 .feature h3 {
-    font-size: 1.45rem;
-    font-weight: 600;
-    margin-bottom: 14px;
-    color: var(--blue);
+  font-size: 1.45rem;
+  font-weight: 600;
+  margin-bottom: 14px;
+  color: var(--blue);
 }
 
 .feature p {
-    color: var(--text-light);
-    line-height: 1.65;
+  color: var(--text-light);
+  line-height: 1.65;
 }
 
-/* =========================================
-   FOOTER
-========================================= */
+/* -----Footer----- */
 footer {
-    background: var(--blue);
-    color: #fff;
-    margin-top: 70px;
+  background: var(--blue);
+  color: #fff;
+  margin-top: 70px;
 }
 
 #contact-footer {
-    padding: 80px 6%;
+  padding: 80px 6%;
 }
 
 .footer-container {
-    max-width: 1150px;
-    margin: auto;
+  max-width: 1150px;
+  margin: auto;
 }
 
 .footer-content h2 {
-    font-size: 2.1rem;
-    margin-bottom: 25px;
-    color: #fff;
+  font-size: 40px;
+  margin-bottom: 25px;
+  color: #fff;
 }
 
 .footer-content p {
-    color: #e0e0e0;
-    line-height: 1.7;
-    margin-bottom: 35px;
+  color: #e0e0e0;
+  line-height: 1.7;
+  margin-bottom: 35px;
 }
 
-/* Contact Info Section */
 .contact-info {
-    margin: 40px 0;
+  margin: 40px 0;
 }
 
 .icons .contact-item {
-    margin-bottom: 14px;
-    display: flex;
-    gap: 8px;
-    font-size: 1rem;
+  margin-bottom: 14px;
+  display: flex;
+  gap: 8px;
+  font-size: 1rem;
 }
 
 .contact-item strong {
-    color: #fff;
+  color: #fff;
 }
 
 .contact-item span {
-    color: #e6e6e6;
+  color: #e6e6e6;
 }
 
 .contact-item.address {
-    margin-top: 18px;
-    line-height: 1.55;
+  margin-top: 18px;
+  line-height: 1.55;
 }
 
-/* CTA Button */
-.cta-btn {
-    display: inline-block;
-    padding: 14px 32px;
-    background: #ffb400;
-    color: #000;
-    font-weight: 600;
-    border-radius: 10px;
-    text-decoration: none;
-    margin-top: 20px;
-    transition: 0.3s ease;
-}
-
-.cta-btn:hover {
-    background: #ff9800;
-}
-
-/* Footer Bottom */
 .footer-bottom {
-    background: #05254d;
-    padding: 22px;
-    text-align: center;
-    font-size: 0.95rem;
-    color: #dcdcdc;
-    margin-top: 20px;
+  background: #05254d;
+  padding: 22px;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #dcdcdc;
+  margin-top: 20px;
 }
 
-/* =========================================
-   RESPONSIVENESS
-========================================= */
 @media (max-width: 768px) {
-    .feature {
-        padding: 32px 24px;
-    }
+  .feature {
+    padding: 32px 24px;
+  }
 
-    .footer-content h2 {
-        font-size: 1.8rem;
-    }
+  .footer-content h2 {
+    font-size: 40px;
+  }
 
-    .cta-btn {
-        width: 100%;
-        text-align: center;
-        padding: 15px;
-    }
+  .cta-btn {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+  }
 }
 
 @media (max-width: 480px) {
-    .feature {
-        padding: 25px 20px;
-    }
+  .feature {
+    padding: 25px 20px;
+  }
 
-    .icons .contact-item {
-        flex-direction: column;
-    }
+  .icons .contact-item {
+    flex-direction: column;
+  }
 
-    .export-image img {
-        border-radius: 8px;
-    }
+  .export-image img {
+    border-radius: 8px;
+  }
 }
