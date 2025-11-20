@@ -145,7 +145,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 60px;
+  gap: 0px;
   padding: 150px 8% 100px;
   flex-wrap: wrap;
   background: url('assets/premium_photo.png');
@@ -161,22 +161,21 @@ body {
 }
 
 .hero-left img {
-  width: 450px;
+  width: 550px;
   max-width: 100%;
   height: auto;
-  border-radius: 20px;
-  padding: 20px;
+  /* border-radius: 20px;
   border: 3px solid #06326b;
   box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 50%; */
+  /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
 }
 
 
-.hero-left img:hover {
+/* .hero-left img:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-}
+} */
 
 .hero-right {
   flex: 1.2;
@@ -224,8 +223,8 @@ body {
   }
 
   .hero-left img {
-    width: 250px;
-    margin-bottom: 25px;
+    width: 300px;
+    margin-bottom: 0px;
   }
 
   .hero-right h1 {
@@ -240,7 +239,7 @@ body {
 
 @media (max-width: 480px) {
   .hero {
-    padding: 100px 4% 60px;
+    padding: 20px 4% 60px;
   }
 
   .hero-right h1 {
@@ -258,7 +257,7 @@ body {
 
 /* -----Mission----- */
 .mission-section {
-  padding: 80px 6%;
+  padding: 40px 6%;
   display: flex;
   justify-content: center;
 }
